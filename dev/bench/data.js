@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1702660086635,
+  "lastUpdate": 1702800128548,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -5341,6 +5341,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 45078,
             "range": "± 9058",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tottotodev@gmail.com",
+            "name": "tottoto",
+            "username": "tottoto"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d9c5d3b9b3921e05040ef50d4aca080f563aac36",
+          "message": "refactor(body): switch opt_len helper macro as function (#3483)",
+          "timestamp": "2023-12-16T09:03:27-05:00",
+          "tree_id": "c811d8b3bb8fc19c15e3438c3397ba663da95099",
+          "url": "https://github.com/getong/hyper/commit/d9c5d3b9b3921e05040ef50d4aca080f563aac36"
+        },
+        "date": 1702800126800,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 50701,
+            "range": "± 9108",
             "unit": "ns/iter"
           }
         ]
