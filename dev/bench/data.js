@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1702901674437,
+  "lastUpdate": 1702901728676,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -17727,6 +17727,96 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5072195,
             "range": "± 154567",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tottotodev@gmail.com",
+            "name": "tottoto",
+            "username": "tottoto"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "21aa2f1c69e1cc329b5787122c25596e0fa5e3ed",
+          "message": "refactor(common): move common feature cfg in common::task to common::mod (#3492)",
+          "timestamp": "2023-12-17T08:43:43-05:00",
+          "tree_id": "ffb2d83f9d9d5b88082bc28c38d311aef252a9db",
+          "url": "https://github.com/getong/hyper/commit/21aa2f1c69e1cc329b5787122c25596e0fa5e3ed"
+        },
+        "date": 1702901727653,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 69630,
+            "range": "± 2867",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4153393,
+            "range": "± 62207",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22195,
+            "range": "± 1001",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 24454,
+            "range": "± 649",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 34203,
+            "range": "± 1114",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 101370,
+            "range": "± 4087",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 38623,
+            "range": "± 1875",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 97376,
+            "range": "± 3373",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 49278544,
+            "range": "± 726686",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 83999569,
+            "range": "± 9027391",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5082135,
+            "range": "± 145254",
             "unit": "ns/iter"
           }
         ]
