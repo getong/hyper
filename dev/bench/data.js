@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703002330979,
+  "lastUpdate": 1703550751044,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -5431,6 +5431,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 45468,
             "range": "± 7904",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "3949379+getong@users.noreply.github.com",
+            "name": "19年梦醒",
+            "username": "getong"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "26f867529381f9dafdb9cd76d27e9dbf0fb0b4a4",
+          "message": "docs(examples): use share data in service (#3503)",
+          "timestamp": "2023-12-26T00:08:42Z",
+          "tree_id": "4cdf8340825df5de993260db6dfafae74f009849",
+          "url": "https://github.com/getong/hyper/commit/26f867529381f9dafdb9cd76d27e9dbf0fb0b4a4"
+        },
+        "date": 1703550749773,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 47569,
+            "range": "± 8216",
             "unit": "ns/iter"
           }
         ]
