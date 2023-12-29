@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703761041442,
+  "lastUpdate": 1703864581006,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -5491,6 +5491,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 51008,
             "range": "± 9597",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "44790295+dsgallups@users.noreply.github.com",
+            "name": "Daniel Gallups",
+            "username": "dsgallups"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a9fa893f18c6409abae2e1dcbba0f4487df54d4f",
+          "message": "feat(http2): add `max_pending_accept_reset_streams(num)` back to HTTP/2 server builder (#3507)\n\nIn places where required, the `max_pending_accept_reset_streams` option was reimplemented, as in PR #3201\r\n\r\ncc #3461",
+          "timestamp": "2023-12-29T10:39:56-05:00",
+          "tree_id": "ad2b9b702d1758c367799958c5f7bed54e7b959f",
+          "url": "https://github.com/getong/hyper/commit/a9fa893f18c6409abae2e1dcbba0f4487df54d4f"
+        },
+        "date": 1703864579254,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 46100,
+            "range": "± 10125",
             "unit": "ns/iter"
           }
         ]
