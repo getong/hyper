@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703864581006,
+  "lastUpdate": 1703864640840,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -18207,6 +18207,96 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5217839,
             "range": "± 270276",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "44790295+dsgallups@users.noreply.github.com",
+            "name": "Daniel Gallups",
+            "username": "dsgallups"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a9fa893f18c6409abae2e1dcbba0f4487df54d4f",
+          "message": "feat(http2): add `max_pending_accept_reset_streams(num)` back to HTTP/2 server builder (#3507)\n\nIn places where required, the `max_pending_accept_reset_streams` option was reimplemented, as in PR #3201\r\n\r\ncc #3461",
+          "timestamp": "2023-12-29T10:39:56-05:00",
+          "tree_id": "ad2b9b702d1758c367799958c5f7bed54e7b959f",
+          "url": "https://github.com/getong/hyper/commit/a9fa893f18c6409abae2e1dcbba0f4487df54d4f"
+        },
+        "date": 1703864639743,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 69292,
+            "range": "± 868",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4210096,
+            "range": "± 286740",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 21731,
+            "range": "± 1417",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23999,
+            "range": "± 649",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 32965,
+            "range": "± 1041",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 100994,
+            "range": "± 1682",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 38297,
+            "range": "± 1894",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 96477,
+            "range": "± 3190",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 50244145,
+            "range": "± 1632047",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 84824611,
+            "range": "± 9613515",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5245988,
+            "range": "± 205528",
             "unit": "ns/iter"
           }
         ]
