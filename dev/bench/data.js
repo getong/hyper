@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703864640840,
+  "lastUpdate": 1704815623133,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -5521,6 +5521,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 46100,
             "range": "± 10125",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b6e3b1b79ba368ab73b8510c2ea59392cb80b2ae",
+          "message": "test(benches): re-enable end-to-end http2 chunked benchmarks (#3517)",
+          "timestamp": "2024-01-08T13:32:53-05:00",
+          "tree_id": "d5cda4afe9597351e07713ab9f2f89fefd75fb38",
+          "url": "https://github.com/getong/hyper/commit/b6e3b1b79ba368ab73b8510c2ea59392cb80b2ae"
+        },
+        "date": 1704815622067,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 46687,
+            "range": "± 8360",
             "unit": "ns/iter"
           }
         ]
