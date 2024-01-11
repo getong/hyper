@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704815688365,
+  "lastUpdate": 1704992172521,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -5551,6 +5551,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 46687,
             "range": "± 8360",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tottotodev@gmail.com",
+            "name": "tottoto",
+            "username": "tottoto"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b1ee2284e25864c64ee608e237e607667c6e648e",
+          "message": "refactor(common): replace hyper::common::ready with futures_util::ready (#3359)",
+          "timestamp": "2024-01-09T15:54:13-05:00",
+          "tree_id": "343dd1e2508cb9822a459ccd45c66dfe153a2205",
+          "url": "https://github.com/getong/hyper/commit/b1ee2284e25864c64ee608e237e607667c6e648e"
+        },
+        "date": 1704992171328,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 46569,
+            "range": "± 9142",
             "unit": "ns/iter"
           }
         ]
