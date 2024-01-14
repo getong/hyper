@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705246885191,
+  "lastUpdate": 1705246950747,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -18603,6 +18603,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5105615,
             "range": "± 89610",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dswijj@gmail.com",
+            "name": "dswij",
+            "username": "dswij"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8241f91f5bf9bc8def35cc214a5219ad1a39f71e",
+          "message": "docs(examples): fix client request path (#3520)",
+          "timestamp": "2024-01-12T09:45:52-05:00",
+          "tree_id": "c8cd339c2c74ed08f2f92ded594a9b64194c6e7a",
+          "url": "https://github.com/getong/hyper/commit/8241f91f5bf9bc8def35cc214a5219ad1a39f71e"
+        },
+        "date": 1705246949627,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 67877,
+            "range": "± 1160",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4306719,
+            "range": "± 520718",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 21922,
+            "range": "± 427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 24398,
+            "range": "± 762",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 34324,
+            "range": "± 1283",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 100838,
+            "range": "± 2965",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 38524,
+            "range": "± 2502",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 96856,
+            "range": "± 2999",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 24386745,
+            "range": "± 33833169",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7939964,
+            "range": "± 91345",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7716052,
+            "range": "± 162540",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 50007555,
+            "range": "± 543160",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 84000447,
+            "range": "± 8498890",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5066431,
+            "range": "± 138652",
             "unit": "ns/iter"
           }
         ]
