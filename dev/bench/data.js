@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705982550768,
+  "lastUpdate": 1705982628977,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -18741,6 +18741,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5066431,
             "range": "± 138652",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "github@erebe.eu",
+            "name": "Erèbe - Romain Gerard",
+            "username": "erebe"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "79862ec2e84c32122c820958ceec06d8b7701ff7",
+          "message": "fix(http2): typo in trace logging (#3536)",
+          "timestamp": "2024-01-22T15:59:51-05:00",
+          "tree_id": "7adf9958a848c891309126d5e0f1e1e7e40ccc10",
+          "url": "https://github.com/getong/hyper/commit/79862ec2e84c32122c820958ceec06d8b7701ff7"
+        },
+        "date": 1705982627213,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 71891,
+            "range": "± 1020",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4105199,
+            "range": "± 224312",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22837,
+            "range": "± 684",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 25137,
+            "range": "± 358",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 33912,
+            "range": "± 393",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 102402,
+            "range": "± 3634",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 38135,
+            "range": "± 2410",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 97325,
+            "range": "± 3637",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 24066230,
+            "range": "± 33968393",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 24834460,
+            "range": "± 18353666",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7620929,
+            "range": "± 582644",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 49546866,
+            "range": "± 524180",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 83997855,
+            "range": "± 8900303",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5058673,
+            "range": "± 536283",
             "unit": "ns/iter"
           }
         ]
