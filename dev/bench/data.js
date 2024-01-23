@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705246950747,
+  "lastUpdate": 1705982550768,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -5611,6 +5611,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 52807,
             "range": "± 9050",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "github@erebe.eu",
+            "name": "Erèbe - Romain Gerard",
+            "username": "erebe"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "79862ec2e84c32122c820958ceec06d8b7701ff7",
+          "message": "fix(http2): typo in trace logging (#3536)",
+          "timestamp": "2024-01-22T15:59:51-05:00",
+          "tree_id": "7adf9958a848c891309126d5e0f1e1e7e40ccc10",
+          "url": "https://github.com/getong/hyper/commit/79862ec2e84c32122c820958ceec06d8b7701ff7"
+        },
+        "date": 1705982548557,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 46142,
+            "range": "± 9072",
             "unit": "ns/iter"
           }
         ]
