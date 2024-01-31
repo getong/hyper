@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1706719244258,
+  "lastUpdate": 1706719315101,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -19017,6 +19017,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5274146,
             "range": "± 425075",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tottotodev@gmail.com",
+            "name": "tottoto",
+            "username": "tottoto"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "90eb95f62a32981cb662b0f750027231d8a2586b",
+          "message": "chore(lib): remove importing prelude trait in 2021 edition (#3546)",
+          "timestamp": "2024-01-28T08:02:12-05:00",
+          "tree_id": "ae7f0a96e7f1e4048993a99f7788baf51f8140ea",
+          "url": "https://github.com/getong/hyper/commit/90eb95f62a32981cb662b0f750027231d8a2586b"
+        },
+        "date": 1706719313178,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 69805,
+            "range": "± 3510",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4194923,
+            "range": "± 284049",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22452,
+            "range": "± 585",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 25175,
+            "range": "± 495",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 33843,
+            "range": "± 957",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 100023,
+            "range": "± 2916",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 38481,
+            "range": "± 1167",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 96692,
+            "range": "± 4115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 24795717,
+            "range": "± 33869226",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 8127960,
+            "range": "± 426744",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7726754,
+            "range": "± 430219",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 49981687,
+            "range": "± 1008098",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 84000135,
+            "range": "± 8484350",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5114162,
+            "range": "± 140416",
             "unit": "ns/iter"
           }
         ]
