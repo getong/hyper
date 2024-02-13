@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1707810322879,
+  "lastUpdate": 1707810344358,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -19155,6 +19155,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5114162,
             "range": "± 140416",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "distinct": true,
+          "id": "7206fe30302937075c51c16a69d1eb3bbce6a671",
+          "message": "fix(rt): `Sleep::downcast_mut_pin()` no longer extend lifetime\n\nThis lifetime extension was a mistake.\n\nCloses #3556\n\nBREAKING CHANGE: The returned lifetime from `Sleep::downcast_mut_pin()`\n  is no longer `'static`. This shouldn't affect most usage. This sort of\n  breaking change is needed because it is _wrong_.",
+          "timestamp": "2024-02-05T10:17:12-05:00",
+          "tree_id": "d54ba733d16c7a2f1f2fc3fce9efca2bdefd9a7f",
+          "url": "https://github.com/getong/hyper/commit/7206fe30302937075c51c16a69d1eb3bbce6a671"
+        },
+        "date": 1707810343249,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 69016,
+            "range": "± 1848",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4009992,
+            "range": "± 65905",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22274,
+            "range": "± 6279",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 24300,
+            "range": "± 492",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 34214,
+            "range": "± 714",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 101347,
+            "range": "± 4010",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 39000,
+            "range": "± 1535",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 97438,
+            "range": "± 3501",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 25575256,
+            "range": "± 33820310",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7917864,
+            "range": "± 94681",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7646585,
+            "range": "± 95817",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 49527067,
+            "range": "± 378962",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 84000397,
+            "range": "± 8581603",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5107658,
+            "range": "± 86262",
             "unit": "ns/iter"
           }
         ]
