@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1708869987416,
+  "lastUpdate": 1710062417700,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -5761,6 +5761,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 51527,
             "range": "± 9965",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "contact@glendc.com",
+            "name": "Glen De Cauwsemaecker",
+            "username": "GlenDC"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9c438e386cbffe17bbbb2b001152ded640e7332e",
+          "message": "chore(docs): replace client link in `conn`s documentation (#3501)",
+          "timestamp": "2024-03-06T14:35:01+08:00",
+          "tree_id": "dd35bfc446438387f2bd8321e9e621ca46c21185",
+          "url": "https://github.com/getong/hyper/commit/9c438e386cbffe17bbbb2b001152ded640e7332e"
+        },
+        "date": 1710062414979,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 45613,
+            "range": "± 9247",
             "unit": "ns/iter"
           }
         ]
