@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1710062470898,
+  "lastUpdate": 1711073833703,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -5791,6 +5791,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 45613,
             "range": "± 9247",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "eric_rosenberg@apple.com",
+            "name": "Eric Rosenberg",
+            "username": "ehaydenr"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0013bdda5cd34ed6fca089eceb0133395b7be041",
+          "message": "feat: relax connection IO trait bounds (#3595)",
+          "timestamp": "2024-03-15T20:12:38+08:00",
+          "tree_id": "2ce67e1b5fdebd117de67d9478384f4af1dcee41",
+          "url": "https://github.com/getong/hyper/commit/0013bdda5cd34ed6fca089eceb0133395b7be041"
+        },
+        "date": 1711073831885,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 45761,
+            "range": "± 9271",
             "unit": "ns/iter"
           }
         ]
