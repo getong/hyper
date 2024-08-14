@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1722013856743,
+  "lastUpdate": 1723653388409,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -5851,6 +5851,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 45838,
             "range": "± 9702.97",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "distinct": true,
+          "id": "ad89b53e689cd0891e42447b54798d32ca090eec",
+          "message": "style(capi): adjust spacing from cbindgen",
+          "timestamp": "2024-08-12T13:49:46-07:00",
+          "tree_id": "4605d3576ca1b1126027291f2b0472d8dbdbdf63",
+          "url": "https://github.com/getong/hyper/commit/ad89b53e689cd0891e42447b54798d32ca090eec"
+        },
+        "date": 1723653387127,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 48963,
+            "range": "± 8902.30",
             "unit": "ns/iter"
           }
         ]
