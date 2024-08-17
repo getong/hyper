@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1723653440935,
+  "lastUpdate": 1723858599900,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -5881,6 +5881,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 48963,
             "range": "± 8902.30",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gngppz@gmail.com",
+            "name": "0x676e67",
+            "username": "0x676e67"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4c84e8c1c26a1464221de96b9f39816ce7251a5f",
+          "message": "feat(client): Add HTTP/2 builder options `header_table_size()` and `max_concurrent_streams()` (#3731)",
+          "timestamp": "2024-08-16T14:51:37-04:00",
+          "tree_id": "04f6adc844b65c88bbc60a05a33c12d313d23236",
+          "url": "https://github.com/getong/hyper/commit/4c84e8c1c26a1464221de96b9f39816ce7251a5f"
+        },
+        "date": 1723858598660,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 45756,
+            "range": "± 8732.48",
             "unit": "ns/iter"
           }
         ]
