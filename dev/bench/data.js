@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1723858599900,
+  "lastUpdate": 1723858655500,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -19983,6 +19983,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5176281,
             "range": "± 155654.75",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gngppz@gmail.com",
+            "name": "0x676e67",
+            "username": "0x676e67"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4c84e8c1c26a1464221de96b9f39816ce7251a5f",
+          "message": "feat(client): Add HTTP/2 builder options `header_table_size()` and `max_concurrent_streams()` (#3731)",
+          "timestamp": "2024-08-16T14:51:37-04:00",
+          "tree_id": "04f6adc844b65c88bbc60a05a33c12d313d23236",
+          "url": "https://github.com/getong/hyper/commit/4c84e8c1c26a1464221de96b9f39816ce7251a5f"
+        },
+        "date": 1723858654004,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 69938,
+            "range": "± 11040.61",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 3958856,
+            "range": "± 100235.45",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22273,
+            "range": "± 369.53",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 24480,
+            "range": "± 5195.67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 33444,
+            "range": "± 688.29",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 99065,
+            "range": "± 2828.21",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 36990,
+            "range": "± 4617.77",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 91615,
+            "range": "± 2967.19",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 24747514,
+            "range": "± 33629421.64",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 23990985,
+            "range": "± 9607028.85",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7676095,
+            "range": "± 132690.86",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 49936238,
+            "range": "± 503562.82",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 50071477,
+            "range": "± 706970.92",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5073036,
+            "range": "± 215985.68",
             "unit": "ns/iter"
           }
         ]
