@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1724506885561,
+  "lastUpdate": 1724506937599,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -20121,6 +20121,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5073036,
             "range": "± 215985.68",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hugo@whynothugo.nl",
+            "name": "Hugo",
+            "username": "WhyNotHugo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "492ab246319504974b59c3b8212970d2844d7838",
+          "message": "docs(client): Link from Connection to handshake (#3742)\n\nWhen reading the documentation for `Connection` it is not entirely\r\nobvious how instances of this type are obtained. Add a helpful link,\r\nmostly for those less familiar.",
+          "timestamp": "2024-08-24T01:55:14+09:00",
+          "tree_id": "410b8dcdb233026f9283cc340d0a29289d39f306",
+          "url": "https://github.com/getong/hyper/commit/492ab246319504974b59c3b8212970d2844d7838"
+        },
+        "date": 1724506935971,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 70126,
+            "range": "± 3116.23",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4156702,
+            "range": "± 142987.81",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22327,
+            "range": "± 918.29",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 24853,
+            "range": "± 634.29",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 34361,
+            "range": "± 855.88",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 102889,
+            "range": "± 3953.87",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 38901,
+            "range": "± 7344.63",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 94998,
+            "range": "± 1997.46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 24301253,
+            "range": "± 33740385.19",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7924697,
+            "range": "± 108453.88",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7672504,
+            "range": "± 240890.46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 50711672,
+            "range": "± 331961.86",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 50572444,
+            "range": "± 405902.14",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5132539,
+            "range": "± 132866.51",
             "unit": "ns/iter"
           }
         ]
