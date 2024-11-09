@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1731159094435,
+  "lastUpdate": 1731159145653,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -20397,6 +20397,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5143907,
             "range": "± 147119.46",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ionut.slaveanu@adswizz.com",
+            "name": "Slaveanu Ionut",
+            "username": "ionut-slaveanu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "13b0594348916b901ad7e1c838b9d90298db6af4",
+          "message": "fix(http2): improve graceful shutdown during handshake (#3729)\n\nBefore, if a graceful shutdown was triggered while the handshake was in-progress, the connection would just be dropped instantly. However, if some requests were in-flight as part of the handshake, they'd get dropped along with it.\r\n\r\nNow, if handshake is in-progress, we record that a close is desired, and as soon as the handshake has completed, the real graceful shutdown process starts, which should send the proper signals back about what happened with the in-flight requests.",
+          "timestamp": "2024-10-25T11:38:17-04:00",
+          "tree_id": "6508e646158b7a0c123b5353b099d7fbdda5ad27",
+          "url": "https://github.com/getong/hyper/commit/13b0594348916b901ad7e1c838b9d90298db6af4"
+        },
+        "date": 1731159144375,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 68041,
+            "range": "± 6179.73",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 3899110,
+            "range": "± 352148.85",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20418,
+            "range": "± 1137.37",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 22720,
+            "range": "± 995.06",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 32379,
+            "range": "± 3408.44",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 93252,
+            "range": "± 9114.93",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 35208,
+            "range": "± 1630.37",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 87320,
+            "range": "± 4311.49",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 23912936,
+            "range": "± 32638549.68",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 24181585,
+            "range": "± 16357285.13",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7170193,
+            "range": "± 338172.01",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 46163581,
+            "range": "± 2683812.06",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 45492380,
+            "range": "± 2281505.76",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 4718429,
+            "range": "± 381705.62",
             "unit": "ns/iter"
           }
         ]
