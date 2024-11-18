@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1731159145653,
+  "lastUpdate": 1731936004002,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -6001,6 +6001,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 44663,
             "range": "± 11066.69",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tottotodev@gmail.com",
+            "name": "tottoto",
+            "username": "tottoto"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "65026b2ad9cd58aa24222fe73fa7d58f5f78bbba",
+          "message": "chore(dependencies): remove libc crate from dependencies (#3377)",
+          "timestamp": "2024-11-17T15:33:23+09:00",
+          "tree_id": "35704b9b18ace75f5f1d95b5cc0814321972f70e",
+          "url": "https://github.com/getong/hyper/commit/65026b2ad9cd58aa24222fe73fa7d58f5f78bbba"
+        },
+        "date": 1731936002880,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 46814,
+            "range": "± 9047.89",
             "unit": "ns/iter"
           }
         ]
