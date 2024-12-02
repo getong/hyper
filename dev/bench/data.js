@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1731936055070,
+  "lastUpdate": 1733103496216,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -6031,6 +6031,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 46814,
             "range": "± 9047.89",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "1161813899@qq.com",
+            "name": "Lin Yihai",
+            "username": "linyihai"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "12717d16594debd8f2b1e3e169cc9b4700ee25b3",
+          "message": "chore(ffi): only backup hyper.h when passing --verify (#3800)",
+          "timestamp": "2024-11-29T13:44:41-05:00",
+          "tree_id": "4cb55f377d00ef65074d6b837a8116bb8c92716f",
+          "url": "https://github.com/getong/hyper/commit/12717d16594debd8f2b1e3e169cc9b4700ee25b3"
+        },
+        "date": 1733103494858,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 47460,
+            "range": "± 9110.87",
             "unit": "ns/iter"
           }
         ]
