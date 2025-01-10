@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1736491662861,
+  "lastUpdate": 1736491715051,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -6091,6 +6091,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 45786,
             "range": "± 8905.60",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "finntbear@gmail.com",
+            "name": "Finn Bear",
+            "username": "finnbear"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e981a91e68aa92b0dee771362de771daa31c713e",
+          "message": "fix(server): change `max_local_error_reset_streams` function to `&mut self` (#3820)\n\nBREAKING CHANGE: `http2::Builder::max_local_error_reset_streams()` now takes `&mut self` and returns `&mut Self`. In practice, this shouldn't break almost anyone. It was the wrong receiver and return types.",
+          "timestamp": "2025-01-07T09:05:13-05:00",
+          "tree_id": "20a6eff65a6372da157f2c360a9843f835f30157",
+          "url": "https://github.com/getong/hyper/commit/e981a91e68aa92b0dee771362de771daa31c713e"
+        },
+        "date": 1736491713303,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 46004,
+            "range": "± 8631.88",
             "unit": "ns/iter"
           }
         ]
