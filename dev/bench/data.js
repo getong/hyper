@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1736082645120,
+  "lastUpdate": 1736491662861,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -20919,6 +20919,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5214084,
             "range": "± 97656.40",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "finntbear@gmail.com",
+            "name": "Finn Bear",
+            "username": "finnbear"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e981a91e68aa92b0dee771362de771daa31c713e",
+          "message": "fix(server): change `max_local_error_reset_streams` function to `&mut self` (#3820)\n\nBREAKING CHANGE: `http2::Builder::max_local_error_reset_streams()` now takes `&mut self` and returns `&mut Self`. In practice, this shouldn't break almost anyone. It was the wrong receiver and return types.",
+          "timestamp": "2025-01-07T09:05:13-05:00",
+          "tree_id": "20a6eff65a6372da157f2c360a9843f835f30157",
+          "url": "https://github.com/getong/hyper/commit/e981a91e68aa92b0dee771362de771daa31c713e"
+        },
+        "date": 1736491660914,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 69298,
+            "range": "± 1093.97",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4690124,
+            "range": "± 1087121.86",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 21364,
+            "range": "± 375.04",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23182,
+            "range": "± 449.03",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 31917,
+            "range": "± 802.05",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 98451,
+            "range": "± 1581.45",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 35853,
+            "range": "± 1421.01",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 92446,
+            "range": "± 1377.72",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 24230793,
+            "range": "± 32599665.99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7894790,
+            "range": "± 150003.76",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7687766,
+            "range": "± 278748.90",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 50773468,
+            "range": "± 645971.76",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 50798925,
+            "range": "± 823681.85",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5130076,
+            "range": "± 215378.95",
             "unit": "ns/iter"
           }
         ]
