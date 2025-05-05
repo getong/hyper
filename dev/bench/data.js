@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1746431809541,
+  "lastUpdate": 1746448942784,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -6121,6 +6121,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 46004,
             "range": "± 8631.88",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "git@katelyn.world",
+            "name": "katelyn martin",
+            "username": "cratelyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "12d9b55a03d9cac0ff554da337a8f4278fed819d",
+          "message": "chore(proto/h2): fix module-level documentation (#3881)\n\n`proto::h2::ping` has some documentation that won't be rendered\nproperly, because it is written as documentation of an item rather than\ndocumenting the enclosing submodule.\n\nthis commit updates this comment, using `//!` notation.\n\nSigned-off-by: katelyn martin <git@katelyn.world>",
+          "timestamp": "2025-04-28T17:04:25-04:00",
+          "tree_id": "d1422947f953c9a93c93b8347f0a00429114eabd",
+          "url": "https://github.com/getong/hyper/commit/12d9b55a03d9cac0ff554da337a8f4278fed819d"
+        },
+        "date": 1746448941078,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 47557,
+            "range": "± 7825.52",
             "unit": "ns/iter"
           }
         ]
