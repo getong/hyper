@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1736491715051,
+  "lastUpdate": 1746431809541,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -21057,6 +21057,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5130076,
             "range": "± 215378.95",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "git@katelyn.world",
+            "name": "katelyn martin",
+            "username": "cratelyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "12d9b55a03d9cac0ff554da337a8f4278fed819d",
+          "message": "chore(proto/h2): fix module-level documentation (#3881)\n\n`proto::h2::ping` has some documentation that won't be rendered\nproperly, because it is written as documentation of an item rather than\ndocumenting the enclosing submodule.\n\nthis commit updates this comment, using `//!` notation.\n\nSigned-off-by: katelyn martin <git@katelyn.world>",
+          "timestamp": "2025-04-28T17:04:25-04:00",
+          "tree_id": "d1422947f953c9a93c93b8347f0a00429114eabd",
+          "url": "https://github.com/getong/hyper/commit/12d9b55a03d9cac0ff554da337a8f4278fed819d"
+        },
+        "date": 1746431808106,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 69547,
+            "range": "± 2173.72",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4883733,
+            "range": "± 450823.74",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 21399,
+            "range": "± 411.30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23805,
+            "range": "± 434.65",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 32049,
+            "range": "± 819.46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 98541,
+            "range": "± 2189.68",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 36748,
+            "range": "± 842.92",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 90861,
+            "range": "± 3030.95",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 24188353,
+            "range": "± 32869978.88",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7867252,
+            "range": "± 294875.51",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7625490,
+            "range": "± 315063.63",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 50587562,
+            "range": "± 4140761.12",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 59688452,
+            "range": "± 9920194.00",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5320659,
+            "range": "± 4251721.94",
             "unit": "ns/iter"
           }
         ]
