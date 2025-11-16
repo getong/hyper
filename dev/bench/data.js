@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1746448942784,
+  "lastUpdate": 1763272656013,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -6151,6 +6151,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 47557,
             "range": "± 7825.52",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "793af1ed2a3f1fd65e5a8de85b368daa58b15279",
+          "message": "docs(error): add more information about `is_incomplete_message()` (#3978)",
+          "timestamp": "2025-11-14T12:33:06-05:00",
+          "tree_id": "b049d050a6c48f683b4fe46859c4a1550ee96e79",
+          "url": "https://github.com/getong/hyper/commit/793af1ed2a3f1fd65e5a8de85b368daa58b15279"
+        },
+        "date": 1763272654664,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 45488,
+            "range": "± 7750.33",
             "unit": "ns/iter"
           }
         ]
