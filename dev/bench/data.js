@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1774640952439,
+  "lastUpdate": 1774641002993,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -21363,6 +21363,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5035650,
             "range": "± 4697295.18",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "adam@winstanley.industries",
+            "name": "wi-adam",
+            "username": "wi-adam"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7211ec25eff2ea6ee783817fee2a221d4eb2ed03",
+          "message": "fix(http1): allow keep-alive for chunked requests with trailers (#4043)\n\nWhen a chunked request body included trailers, poll_read_body\nincorrectly transitioned to Reading::Closed instead of\nReading::KeepAlive. This prevented connection reuse for any request\nthat sent trailers, even though trailers signal body completion just\nlike a final data frame at EOF.\n\nCloses #4044",
+          "timestamp": "2026-03-27T12:10:45-04:00",
+          "tree_id": "71d780dd43473789911ef642ce4491c5066dc7a3",
+          "url": "https://github.com/getong/hyper/commit/7211ec25eff2ea6ee783817fee2a221d4eb2ed03"
+        },
+        "date": 1774641000877,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 68226,
+            "range": "± 1314.17",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 3953561,
+            "range": "± 570434.99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20794,
+            "range": "± 4014.47",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23101,
+            "range": "± 454.19",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 30180,
+            "range": "± 528.27",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 104867,
+            "range": "± 9939.33",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 41000039,
+            "range": "± 54090.05",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 84050,
+            "range": "± 1372.61",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 7926308,
+            "range": "± 126105.18",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7710466,
+            "range": "± 122662.11",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7542277,
+            "range": "± 117457.54",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 50499647,
+            "range": "± 349913.66",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 49999264,
+            "range": "± 2427558.53",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5183243,
+            "range": "± 34060.01",
             "unit": "ns/iter"
           }
         ]
