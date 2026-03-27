@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763272663395,
+  "lastUpdate": 1774640952439,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -6181,6 +6181,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 45488,
             "range": "± 7750.33",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "adam@winstanley.industries",
+            "name": "wi-adam",
+            "username": "wi-adam"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7211ec25eff2ea6ee783817fee2a221d4eb2ed03",
+          "message": "fix(http1): allow keep-alive for chunked requests with trailers (#4043)\n\nWhen a chunked request body included trailers, poll_read_body\nincorrectly transitioned to Reading::Closed instead of\nReading::KeepAlive. This prevented connection reuse for any request\nthat sent trailers, even though trailers signal body completion just\nlike a final data frame at EOF.\n\nCloses #4044",
+          "timestamp": "2026-03-27T12:10:45-04:00",
+          "tree_id": "71d780dd43473789911ef642ce4491c5066dc7a3",
+          "url": "https://github.com/getong/hyper/commit/7211ec25eff2ea6ee783817fee2a221d4eb2ed03"
+        },
+        "date": 1774640950337,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 39364,
+            "range": "± 5689.29",
             "unit": "ns/iter"
           }
         ]
