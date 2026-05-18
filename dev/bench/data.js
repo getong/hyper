@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779103313069,
+  "lastUpdate": 1779103692489,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -21609,6 +21609,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 3493986,
             "range": "± 71294.51",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kimjune01@gmail.com",
+            "name": "June",
+            "username": "kimjune01"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "659e1e90142a4c5c05c6aa5813ec3b97863bcfaf",
+          "message": "docs(error): add detailed doc comments to Error query methods (#4065)\n\nAdd explanatory doc comments to is_parse, is_parse_too_large,\nis_parse_version_h2, is_user, is_canceled, is_closed,\nis_body_write_aborted, is_shutdown, and is_timeout. Each comment\nexplains what triggers the error and links to relevant builder\nmethods where applicable.",
+          "timestamp": "2026-05-13T15:27:02-04:00",
+          "tree_id": "0104a2f738c394fcc21dc6d15bcd2d50bd2e5282",
+          "url": "https://github.com/getong/hyper/commit/659e1e90142a4c5c05c6aa5813ec3b97863bcfaf"
+        },
+        "date": 1779103690122,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 67457,
+            "range": "± 7389.99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4157549,
+            "range": "± 144312.39",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22546,
+            "range": "± 273.43",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23801,
+            "range": "± 248.81",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 28644,
+            "range": "± 309.07",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 91191,
+            "range": "± 18724.11",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 41000101,
+            "range": "± 20877.13",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 80333,
+            "range": "± 961.62",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 16365582,
+            "range": "± 8377321.22",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 8071217,
+            "range": "± 117625.57",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7918458,
+            "range": "± 168241.36",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 55221698,
+            "range": "± 455122.99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 54615585,
+            "range": "± 392836.81",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5617412,
+            "range": "± 86922.52",
             "unit": "ns/iter"
           }
         ]
