@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779337413012,
+  "lastUpdate": 1779337562920,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -21747,6 +21747,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5617412,
             "range": "± 86922.52",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5dbcae72ba066ca8fddbe0a108f6f3591a7f68f7",
+          "message": "docs(lib): fixup markdown and grammar in doc comments (#4074)",
+          "timestamp": "2026-05-20T15:11:59-04:00",
+          "tree_id": "9ac7b1bb3237d80f008cd910ed109aea8ad74852",
+          "url": "https://github.com/getong/hyper/commit/5dbcae72ba066ca8fddbe0a108f6f3591a7f68f7"
+        },
+        "date": 1779337560578,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 67449,
+            "range": "± 694.72",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 3924056,
+            "range": "± 183322.60",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20511,
+            "range": "± 452.79",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 22787,
+            "range": "± 592.45",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 29580,
+            "range": "± 1138.90",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 98658,
+            "range": "± 2572.17",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 40999979,
+            "range": "± 4724.05",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 83051,
+            "range": "± 1682.18",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 15828790,
+            "range": "± 16332175.33",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 24263113,
+            "range": "± 8284543.48",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7473662,
+            "range": "± 123818.94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 91000180,
+            "range": "± 419746.46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 49604561,
+            "range": "± 636230.59",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5439033,
+            "range": "± 65246.85",
             "unit": "ns/iter"
           }
         ]
