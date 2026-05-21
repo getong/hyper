@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779103692489,
+  "lastUpdate": 1779337413012,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -6241,6 +6241,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 43348,
             "range": "± 12329.20",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5dbcae72ba066ca8fddbe0a108f6f3591a7f68f7",
+          "message": "docs(lib): fixup markdown and grammar in doc comments (#4074)",
+          "timestamp": "2026-05-20T15:11:59-04:00",
+          "tree_id": "9ac7b1bb3237d80f008cd910ed109aea8ad74852",
+          "url": "https://github.com/getong/hyper/commit/5dbcae72ba066ca8fddbe0a108f6f3591a7f68f7"
+        },
+        "date": 1779337411683,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 56889,
+            "range": "± 12476.47",
             "unit": "ns/iter"
           }
         ]
