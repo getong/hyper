@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782795897795,
+  "lastUpdate": 1783445437477,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -6331,6 +6331,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 51554,
             "range": "± 10106.47",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "satsyndicate@gmail.com",
+            "name": "Abhinav",
+            "username": "abh1nav10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ccc1e850dc0cda3e71b0acd11f60ca3d48d09034",
+          "message": "feat(rt): add `ReadBufCursor::initialized_unfilled()` method (#4115)",
+          "timestamp": "2026-07-07T11:14:34-04:00",
+          "tree_id": "e98bf4ecc89b6bea4dfbc7899fe44c484b712cf7",
+          "url": "https://github.com/getong/hyper/commit/ccc1e850dc0cda3e71b0acd11f60ca3d48d09034"
+        },
+        "date": 1783445436312,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 43989,
+            "range": "± 7195.98",
             "unit": "ns/iter"
           }
         ]
