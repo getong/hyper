@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783445660521,
+  "lastUpdate": 1785696669991,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -6361,6 +6361,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 43989,
             "range": "± 7195.98",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "91108185+Catwoman08@users.noreply.github.com",
+            "name": "Catwoman08",
+            "username": "Catwoman08"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "084473f728f9d07b3be5845475aa2f62ed9ff579",
+          "message": "docs(contrib): update CONTRIBUTING.md (#4140)",
+          "timestamp": "2026-07-31T14:21:38-04:00",
+          "tree_id": "69b712b8ec3bf78368528a26b8d0dc19f20cbfb7",
+          "url": "https://github.com/getong/hyper/commit/084473f728f9d07b3be5845475aa2f62ed9ff579"
+        },
+        "date": 1785696668849,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 49829,
+            "range": "± 7562.70",
             "unit": "ns/iter"
           }
         ]
