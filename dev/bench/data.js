@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786307234291,
+  "lastUpdate": 1786307839780,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -22437,6 +22437,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 4623511,
             "range": "± 77356.60",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ricochet@users.noreply.github.com",
+            "name": "Bailey Hayes",
+            "username": "ricochet"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f660f5bf6eed3fe793f899507ff5bb9e266d4b0d",
+          "message": "fix(http1): flush bytes buffered by the write re-check before yielding (#4143)\n\n`poll_loop`'s main path always calls `poll_flush` after `poll_write`. The\n\"wants_write_again\" re-check added in #3988 calls `poll_write` a second time\nand returns straight out of the loop when it pends, skipping that flush.\n\nThat second write can buffer bytes before it pends. When a response body\nreaches end-of-stream between the two write polls, `end_body()` buffers the\nend of the message and the write then pends on the *next* message\n(`poll_msg`). Returning there strands the terminating chunk in the write\nbuffer: the wake-ups the connection is left waiting on are for reads, so\nnothing flushes it. The peer receives the body but never the terminator and\nwaits until it gives up, at which point the connection reports\n`IncompleteMessage` from `mid_message_detect_eof`.\n\nObserved on a server streaming a chunked body fed from another thread, at\nroughly one connection in 600k. hyper's own trace shows the divergence:\n\n    healthy:  buf.len=24, buf.len=5, flushed 29 bytes\n    stalled:  buf.len=24, flushed 24 bytes, buf.len=5, <nothing>\n\nFlush what the re-check buffered before yielding. Guard the flush on there\nbeing buffered bytes so the call pattern is otherwise unchanged.\n\nAdd a test that drives the interleaving deterministically: a body that yields\none data frame, then pends, then ends the stream on the very next poll, all\nwithin a single `poll_loop` iteration.",
+          "timestamp": "2026-08-07T12:11:31-04:00",
+          "tree_id": "761a7970afb2531153d67299803543f938ca8b5a",
+          "url": "https://github.com/getong/hyper/commit/f660f5bf6eed3fe793f899507ff5bb9e266d4b0d"
+        },
+        "date": 1786307838462,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 68674,
+            "range": "± 3187.94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4116442,
+            "range": "± 64085.75",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20591,
+            "range": "± 581.70",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 22780,
+            "range": "± 641.35",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 30102,
+            "range": "± 1027.23",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 97704,
+            "range": "± 9770.75",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 41000001,
+            "range": "± 5156.33",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 80422,
+            "range": "± 1925.93",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 15962227,
+            "range": "± 16415785.00",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7683472,
+            "range": "± 123595.41",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7598880,
+            "range": "± 372028.47",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 51072855,
+            "range": "± 422250.11",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 53433984,
+            "range": "± 1297035.36",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5475432,
+            "range": "± 65782.62",
             "unit": "ns/iter"
           }
         ]
