@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786477289733,
+  "lastUpdate": 1786477309915,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -22575,6 +22575,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5475432,
             "range": "± 65782.62",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "72fcf545c9b4a261f31d89bafd3019a2d4e9e1d7",
+          "message": "fix(http1): detect TE: trailers caselessly and with other values (#4152)",
+          "timestamp": "2026-08-11T07:16:47Z",
+          "tree_id": "41be8370cf91b722bb18cbf621ff41c415ce9581",
+          "url": "https://github.com/getong/hyper/commit/72fcf545c9b4a261f31d89bafd3019a2d4e9e1d7"
+        },
+        "date": 1786477307831,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 67401,
+            "range": "± 1993.01",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4923837,
+            "range": "± 358534.21",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 20834,
+            "range": "± 481.22",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 22820,
+            "range": "± 525.08",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 30943,
+            "range": "± 1041.09",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 100813,
+            "range": "± 1847.75",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 40999748,
+            "range": "± 6664.20",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 81334,
+            "range": "± 3331.42",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 16120842,
+            "range": "± 16452113.89",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7908445,
+            "range": "± 21067603.33",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7715343,
+            "range": "± 154946.94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 93599933,
+            "range": "± 1394767.30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 51730811,
+            "range": "± 1218316.88",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5675208,
+            "range": "± 122202.68",
             "unit": "ns/iter"
           }
         ]
