@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786477309915,
+  "lastUpdate": 1786653905376,
   "repoUrl": "https://github.com/getong/hyper",
   "entries": {
     "connect": [
@@ -6451,6 +6451,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 51629,
             "range": "± 10551.98",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zafkielc@gmail.com",
+            "name": "Murilo Silva",
+            "username": "CinisBorn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fca07bd3937d4a3a4822372acdf766d0640796af",
+          "message": "style(lib): fix missing_errors_doc lint (#4154)\n\nRefs: #4071",
+          "timestamp": "2026-08-12T11:24:55-04:00",
+          "tree_id": "fcb3e9d80d65243bb871593ff781b15e7782246f",
+          "url": "https://github.com/getong/hyper/commit/fca07bd3937d4a3a4822372acdf766d0640796af"
+        },
+        "date": 1786653903799,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 59615,
+            "range": "± 8969.96",
             "unit": "ns/iter"
           }
         ]
